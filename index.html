@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -32,40 +33,41 @@
                 </p>
             </section>
 
-            <form action="#">
+            <form action="#" novalidate>
                 <div class="form-container">
                     <p>Let's do this!</p>
 
                     <fieldset>
                         <div class="form-cell">
                             <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" id="first_name">
+                            <input type="text" name="first_name" id="first_name" required>
                         </div>
                         <div class="form-cell">
                             <label for="last_name">Last Name</label>
-                            <input type="text" id="last_name" name="last_name">
+                            <input type="text" id="last_name" name="last_name" required>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <div class="form-cell">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-cell">
                             <label for="phone">Phone Number</label>
-                            <input type="text" id="phone" name=" phone">
+                            <input type="text" id="phone" name=" phone" required>
                         </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="error">
                         <div class="form-cell">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="form-cell">
                             <label for="confirm_pw">Confirm Password</label>
-                            <input type="password" id="confirm_pw" name="confirm_pw">
+                            <input type="password" id="confirm_pw" name="confirm_pw" required>
                         </div>
                     </fieldset>
                 </div>
